@@ -113,9 +113,10 @@ a.none:hover {
   transition-timing-function: linear;
   cursor: pointer;
   text-decoration: solid;
-  font-size: 16px;
+
   background-color: #c2ded1;
 }
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -993,15 +994,9 @@ h2.category-title:after {
   animation: spin 15s infinite linear;
 }
 
-.icon-rocket {
-  color: $icon-rocket--Color;
-}
-
 .shadow-wrapper {
   perspective: 800px;
   perspective-origin: 50% 100px;
-  /*  -webkit-perspective: 800px;
-  -webkit-perspective-origin: 50% 100px;*/
 }
 
 .shadow {
@@ -1019,4 +1014,74 @@ h2.category-title:after {
   box-shadow: 0px 0px 100px #000;
   transform: rotateX(90deg) translateY(100px);
   transform-origin: bottom center;
+}
+.brand:hover {
+  color: #2ecc71 !important;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+/* Social media Icon  */
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a {
+  background-color: #4b5d67;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+@media (max-width: 767px) {
+  .to-top,
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
 }
