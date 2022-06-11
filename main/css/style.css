@@ -1461,3 +1461,53 @@ section {
 .float-button {
   margin-top: 16px;
 }
+
+/*Body css here just to demonstrate scrolling*/
+
+.telegram-popup {
+  height: 130px;
+  min-width: 15%;
+  width: 200px;
+
+  position: fixed;
+  bottom: 0px;
+  left: 15px;
+
+  /*round corners*/
+  border-radius: 10px;
+  /*cool option borders.*/
+
+  /*animate. hide on load*/
+  display: none;
+}
+
+/*text stuff*/
+.telegram-popup p {
+  color: #000000;
+  padding: 4px;
+}
+
+.telegram-button {
+  background-color: #1682fb;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.telegram-button:hover {
+  background-color: black;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.telegram-button p {
+  color: #ffffff;
+  font-size: 15px;
+  /*padding makes the link like a bubble*/
+  padding: 10px;
+}
+
+.telegram-button-link:link {
+  text-decoration: none;
+}
