@@ -1016,7 +1016,7 @@ h2.category-title:after {
   transform-origin: bottom center;
 }
 .brand:hover {
-  color: #2ecc71 !important;
+  color: #d05c5c !important;
   cursor: pointer;
 
   transition-property: all;
@@ -1441,4 +1441,23 @@ section {
   .wrap {
     max-width: 800px;
   }
+}
+
+.floating {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float-button {
+  margin-top: 16px;
 }
